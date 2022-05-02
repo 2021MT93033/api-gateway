@@ -2,7 +2,9 @@ package com.bits.assignment.universalt10.apigateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
+@EnableZuulProxy
 @SpringBootApplication
 public class ApiGatewayApplication {
 

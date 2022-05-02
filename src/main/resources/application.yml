@@ -1,0 +1,68 @@
+server:
+  port: 9001
+  servlet:
+    context-path: /api/
+  max-http-header-size: 100000
+  maxPostSize: 20971520
+  tomcat:
+    remote-ip-header: X-Forwaded-For
+    protocol-header: X-Forwaded-Proto
+    
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: API Gateway
+  profiles:
+    active: local-dev
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 150MB
+  
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: gatewayDB
+      username: admin
+      password: admin
+      authentication-database: gatewayDB
+      maxConnectionsPerHost: 250
+      primaryOnly: true
+      replicaSet: false
+      
+zuul:
+  set-content-length: true
+  ssl-hostname-validation-enabled: false
+  host:
+    connect-timeout-millis: 180000
+    socket-timeout-millis: 180000
+    max-total-connections: 400
+    max-per-route-connections: 40
+    time-unit: MILLISECONDS
+    time-to-live: 10000
+  routes:
+   bookmark:
+     path: /bookmark-service/**
+     url: http://localhost:9003/bookmark-service/
+     sensitive-headers: Cookie, Set-Cookie
+   users:
+     path: /user-service/**
+     url: http://localhost:9002/user-service/
+     sensitive-headers: Cookie, Set-Cookie
+   vendors:
+     path: /vendor-service/**
+     url: http://localhost:9004/vendor-service/
+     sensitive-headers: Cookie, Set-Cookie      
+
+logging:
+  file:
+    name: ./application.log
+    max-history: 5
+    max-size: 100MB
+  level:
+    '[org.springframework]': INFO
+    '[com.bits.assignment]': INFO
+  pattern:
+    file: "[%date{ISO8601}] logLevel=%level pid=${PID:-} thread=%thread service=${springAppName:-} trace=%X{X-B3-TraceId:-} span=%X{X-B3-SpanId:-} parent=%X{X-B3-ParentSpanId:-} class=%logger{40} %msg%n"
