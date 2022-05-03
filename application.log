@@ -1,0 +1,468 @@
+[2022-05-02 17:27:07,643] logLevel=INFO pid=19220 thread=main service=- trace= span= parent= class=c.b.a.u.apigateway.ApiGatewayApplication Starting ApiGatewayApplication using Java 11.0.12 on BALAVIGNESH with PID 19220 (C:\Storage Drive\Programming\BITS\SEM2\CPAD\Assignment2\api-gateway\target\classes started by Vicky in C:\Storage Drive\Programming\BITS\SEM2\CPAD\Assignment2\api-gateway)
+[2022-05-02 17:27:07,645] logLevel=INFO pid=19220 thread=main service=- trace= span= parent= class=c.b.a.u.apigateway.ApiGatewayApplication The following 1 profile is active: "local-dev"
+[2022-05-02 17:27:08,258] logLevel=INFO pid=19220 thread=main service=- trace= span= parent= class=o.s.d.r.c.RepositoryConfigurationDelegate Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[2022-05-02 17:27:08,266] logLevel=INFO pid=19220 thread=main service=- trace= span= parent= class=o.s.d.r.c.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 3 ms. Found 0 MongoDB repository interfaces.
+[2022-05-02 17:27:08,311] logLevel=WARN pid=19220 thread=main service=- trace= span= parent= class=o.s.boot.actuate.endpoint.EndpointId Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+[2022-05-02 17:27:08,409] logLevel=INFO pid=19220 thread=main service=- trace= span= parent= class=o.s.cloud.context.scope.GenericScope BeanFactory id=45b9ef5f-5a02-3ba6-8419-036169e5e58c
+[2022-05-02 17:27:08,763] logLevel=INFO pid=19220 thread=main service=- trace= span= parent= class=o.s.b.w.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 9001 (http)
+[2022-05-02 17:27:08,770] logLevel=INFO pid=19220 thread=main service=- trace= span= parent= class=org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2022-05-02 17:27:08,771] logLevel=INFO pid=19220 thread=main service=- trace= span= parent= class=org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.62]
+[2022-05-02 17:27:08,881] logLevel=INFO pid=19220 thread=main service=- trace= span= parent= class=o.a.c.c.C.[Tomcat].[localhost].[/api] Initializing Spring embedded WebApplicationContext
+[2022-05-02 17:27:08,881] logLevel=INFO pid=19220 thread=main service=- trace= span= parent= class=o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1205 ms
+[2022-05-02 17:27:08,948] logLevel=WARN pid=19220 thread=main service=- trace= span= parent= class=c.n.c.sources.URLConfigurationSource No URLs will be polled as dynamic configuration sources.
+[2022-05-02 17:27:08,948] logLevel=INFO pid=19220 thread=main service=- trace= span= parent= class=c.n.c.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2022-05-02 17:27:08,957] logLevel=INFO pid=19220 thread=main service=- trace= span= parent= class=c.netflix.config.DynamicPropertyFactory DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@194012a2
+[2022-05-02 17:27:09,570] logLevel=WARN pid=19220 thread=main service=- trace= span= parent= class=c.n.c.sources.URLConfigurationSource No URLs will be polled as dynamic configuration sources.
+[2022-05-02 17:27:09,570] logLevel=INFO pid=19220 thread=main service=- trace= span= parent= class=c.n.c.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2022-05-02 17:27:09,848] logLevel=INFO pid=19220 thread=main service=- trace= span= parent= class=org.mongodb.driver.cluster Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[2022-05-02 17:27:09,896] logLevel=INFO pid=19220 thread=cluster-ClusterId{value='626fc71501cc9c63834c3f7e', description='null'}-localhost:27017 service=- trace= span= parent= class=org.mongodb.driver.connection Opened connection [connectionId{localValue:1, serverValue:17}] to localhost:27017
+[2022-05-02 17:27:09,898] logLevel=INFO pid=19220 thread=cluster-rtt-ClusterId{value='626fc71501cc9c63834c3f7e', description='null'}-localhost:27017 service=- trace= span= parent= class=org.mongodb.driver.connection Opened connection [connectionId{localValue:2, serverValue:16}] to localhost:27017
+[2022-05-02 17:27:09,899] logLevel=INFO pid=19220 thread=cluster-ClusterId{value='626fc71501cc9c63834c3f7e', description='null'}-localhost:27017 service=- trace= span= parent= class=org.mongodb.driver.cluster Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=15105800}
+[2022-05-02 17:27:10,308] logLevel=INFO pid=19220 thread=main service=- trace= span= parent= class=o.s.c.netflix.zuul.ZuulFilterInitializer Starting filter initializer
+[2022-05-02 17:27:10,310] logLevel=INFO pid=19220 thread=RMI TCP Connection(3)-127.0.0.1 service=- trace= span= parent= class=o.a.c.c.C.[Tomcat].[localhost].[/api] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-05-02 17:27:10,310] logLevel=INFO pid=19220 thread=RMI TCP Connection(3)-127.0.0.1 service=- trace= span= parent= class=o.s.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2022-05-02 17:27:10,315] logLevel=INFO pid=19220 thread=main service=- trace= span= parent= class=o.s.b.a.e.web.EndpointLinksResolver Exposing 1 endpoint(s) beneath base path '/actuator'
+[2022-05-02 17:27:10,324] logLevel=INFO pid=19220 thread=RMI TCP Connection(3)-127.0.0.1 service=- trace= span= parent= class=o.s.web.servlet.DispatcherServlet Completed initialization in 14 ms
+[2022-05-02 17:27:10,378] logLevel=INFO pid=19220 thread=main service=- trace= span= parent= class=o.s.b.w.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 9001 (http) with context path '/api'
+[2022-05-02 17:27:10,856] logLevel=INFO pid=19220 thread=main service=- trace= span= parent= class=c.b.a.u.apigateway.ApiGatewayApplication Started ApiGatewayApplication in 4.066 seconds (JVM running for 5.003)
+[2022-05-02 17:41:17,259] logLevel=INFO pid=19220 thread=RMI TCP Connection(23)-127.0.0.1 service=- trace= span= parent= class=o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin Application shutdown requested.
+[2022-05-02 17:41:17,609] logLevel=INFO pid=19220 thread=RMI TCP Connection(23)-127.0.0.1 service=- trace= span= parent= class=o.s.c.netflix.zuul.ZuulFilterInitializer Stopping filter initializer
+[2022-05-02 17:42:06,407] logLevel=INFO pid=4592 thread=main service=- trace= span= parent= class=c.b.a.u.apigateway.ApiGatewayApplication Starting ApiGatewayApplication using Java 11.0.12 on BALAVIGNESH with PID 4592 (C:\Storage Drive\Programming\BITS\SEM2\CPAD\Assignment2\api-gateway\target\classes started by Vicky in C:\Storage Drive\Programming\BITS\SEM2\CPAD\Assignment2\api-gateway)
+[2022-05-02 17:42:06,409] logLevel=INFO pid=4592 thread=main service=- trace= span= parent= class=c.b.a.u.apigateway.ApiGatewayApplication The following 1 profile is active: "local-dev"
+[2022-05-02 17:42:07,031] logLevel=INFO pid=4592 thread=main service=- trace= span= parent= class=o.s.d.r.c.RepositoryConfigurationDelegate Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[2022-05-02 17:42:07,039] logLevel=INFO pid=4592 thread=main service=- trace= span= parent= class=o.s.d.r.c.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 4 ms. Found 0 MongoDB repository interfaces.
+[2022-05-02 17:42:07,107] logLevel=WARN pid=4592 thread=main service=- trace= span= parent= class=o.s.boot.actuate.endpoint.EndpointId Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+[2022-05-02 17:42:07,211] logLevel=INFO pid=4592 thread=main service=- trace= span= parent= class=o.s.cloud.context.scope.GenericScope BeanFactory id=45b9ef5f-5a02-3ba6-8419-036169e5e58c
+[2022-05-02 17:42:07,581] logLevel=INFO pid=4592 thread=main service=- trace= span= parent= class=o.s.b.w.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 9001 (http)
+[2022-05-02 17:42:07,589] logLevel=INFO pid=4592 thread=main service=- trace= span= parent= class=org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2022-05-02 17:42:07,589] logLevel=INFO pid=4592 thread=main service=- trace= span= parent= class=org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.62]
+[2022-05-02 17:42:07,698] logLevel=INFO pid=4592 thread=main service=- trace= span= parent= class=o.a.c.c.C.[Tomcat].[localhost].[/api] Initializing Spring embedded WebApplicationContext
+[2022-05-02 17:42:07,698] logLevel=INFO pid=4592 thread=main service=- trace= span= parent= class=o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1261 ms
+[2022-05-02 17:42:07,764] logLevel=WARN pid=4592 thread=main service=- trace= span= parent= class=c.n.c.sources.URLConfigurationSource No URLs will be polled as dynamic configuration sources.
+[2022-05-02 17:42:07,764] logLevel=INFO pid=4592 thread=main service=- trace= span= parent= class=c.n.c.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2022-05-02 17:42:07,774] logLevel=INFO pid=4592 thread=main service=- trace= span= parent= class=c.netflix.config.DynamicPropertyFactory DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@194012a2
+[2022-05-02 17:42:08,385] logLevel=WARN pid=4592 thread=main service=- trace= span= parent= class=c.n.c.sources.URLConfigurationSource No URLs will be polled as dynamic configuration sources.
+[2022-05-02 17:42:08,385] logLevel=INFO pid=4592 thread=main service=- trace= span= parent= class=c.n.c.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2022-05-02 17:42:08,665] logLevel=INFO pid=4592 thread=main service=- trace= span= parent= class=org.mongodb.driver.cluster Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[2022-05-02 17:42:08,716] logLevel=INFO pid=4592 thread=cluster-rtt-ClusterId{value='626fca98e84a6011055a3bb0', description='null'}-localhost:27017 service=- trace= span= parent= class=org.mongodb.driver.connection Opened connection [connectionId{localValue:1, serverValue:20}] to localhost:27017
+[2022-05-02 17:42:08,717] logLevel=INFO pid=4592 thread=cluster-ClusterId{value='626fca98e84a6011055a3bb0', description='null'}-localhost:27017 service=- trace= span= parent= class=org.mongodb.driver.connection Opened connection [connectionId{localValue:2, serverValue:21}] to localhost:27017
+[2022-05-02 17:42:08,719] logLevel=INFO pid=4592 thread=cluster-ClusterId{value='626fca98e84a6011055a3bb0', description='null'}-localhost:27017 service=- trace= span= parent= class=org.mongodb.driver.cluster Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=15734000}
+[2022-05-02 17:42:09,110] logLevel=INFO pid=4592 thread=main service=- trace= span= parent= class=o.s.c.netflix.zuul.ZuulFilterInitializer Starting filter initializer
+[2022-05-02 17:42:09,116] logLevel=INFO pid=4592 thread=main service=- trace= span= parent= class=o.s.b.a.e.web.EndpointLinksResolver Exposing 1 endpoint(s) beneath base path '/actuator'
+[2022-05-02 17:42:09,172] logLevel=INFO pid=4592 thread=main service=- trace= span= parent= class=o.s.b.w.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 9001 (http) with context path '/api'
+[2022-05-02 17:42:09,650] logLevel=INFO pid=4592 thread=main service=- trace= span= parent= class=c.b.a.u.apigateway.ApiGatewayApplication Started ApiGatewayApplication in 4.06 seconds (JVM running for 4.991)
+[2022-05-02 17:42:11,666] logLevel=INFO pid=4592 thread=RMI TCP Connection(9)-127.0.0.1 service=- trace= span= parent= class=o.a.c.c.C.[Tomcat].[localhost].[/api] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-05-02 17:42:11,667] logLevel=INFO pid=4592 thread=RMI TCP Connection(9)-127.0.0.1 service=- trace= span= parent= class=o.s.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2022-05-02 17:42:11,668] logLevel=INFO pid=4592 thread=RMI TCP Connection(9)-127.0.0.1 service=- trace= span= parent= class=o.s.web.servlet.DispatcherServlet Completed initialization in 1 ms
+[2022-05-02 18:04:14,442] logLevel=ERROR pid=4592 thread=http-nio-9001-exec-3 service=- trace= span= parent= class=o.a.c.c.C.[.[.[/api].[dispatcherServlet] Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Handler dispatch failed; nested exception is java.lang.NoSuchMethodError: org.springframework.boot.web.servlet.error.ErrorController.getErrorPath()Ljava/lang/String;] with root cause
+java.lang.NoSuchMethodError: org.springframework.boot.web.servlet.error.ErrorController.getErrorPath()Ljava/lang/String;
+	at org.springframework.cloud.netflix.zuul.web.ZuulHandlerMapping.lookupHandler(ZuulHandlerMapping.java:87)
+	at org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.getHandlerInternal(AbstractUrlHandlerMapping.java:151)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:498)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1261)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1043)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2022-05-02 18:04:14,447] logLevel=ERROR pid=4592 thread=http-nio-9001-exec-3 service=- trace= span= parent= class=o.a.c.c.C.[.[.[/api].[dispatcherServlet] Servlet.service() for servlet [dispatcherServlet] threw exception
+java.lang.NoSuchMethodError: org.springframework.boot.web.servlet.error.ErrorController.getErrorPath()Ljava/lang/String;
+	at org.springframework.cloud.netflix.zuul.web.ZuulHandlerMapping.lookupHandler(ZuulHandlerMapping.java:87)
+	at org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.getHandlerInternal(AbstractUrlHandlerMapping.java:151)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:498)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1261)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1043)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:403)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:249)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:344)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2022-05-02 18:04:14,448] logLevel=ERROR pid=4592 thread=http-nio-9001-exec-3 service=- trace= span= parent= class=o.a.c.c.C.[Tomcat].[localhost] Exception Processing ErrorPage[errorCode=0, location=/error]
+org.springframework.web.util.NestedServletException: Handler dispatch failed; nested exception is java.lang.NoSuchMethodError: org.springframework.boot.web.servlet.error.ErrorController.getErrorPath()Ljava/lang/String;
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1082)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:403)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:249)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:344)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NoSuchMethodError: org.springframework.boot.web.servlet.error.ErrorController.getErrorPath()Ljava/lang/String;
+	at org.springframework.cloud.netflix.zuul.web.ZuulHandlerMapping.lookupHandler(ZuulHandlerMapping.java:87)
+	at org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.getHandlerInternal(AbstractUrlHandlerMapping.java:151)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:498)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1261)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1043)
+	... 38 common frames omitted
+[2022-05-02 18:05:05,023] logLevel=ERROR pid=4592 thread=http-nio-9001-exec-5 service=- trace= span= parent= class=o.a.c.c.C.[.[.[/api].[dispatcherServlet] Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Handler dispatch failed; nested exception is java.lang.NoSuchMethodError: org.springframework.boot.web.servlet.error.ErrorController.getErrorPath()Ljava/lang/String;] with root cause
+java.lang.NoSuchMethodError: org.springframework.boot.web.servlet.error.ErrorController.getErrorPath()Ljava/lang/String;
+	at org.springframework.cloud.netflix.zuul.web.ZuulHandlerMapping.lookupHandler(ZuulHandlerMapping.java:87)
+	at org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.getHandlerInternal(AbstractUrlHandlerMapping.java:151)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:498)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1261)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1043)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2022-05-02 18:05:05,025] logLevel=ERROR pid=4592 thread=http-nio-9001-exec-5 service=- trace= span= parent= class=o.a.c.c.C.[.[.[/api].[dispatcherServlet] Servlet.service() for servlet [dispatcherServlet] threw exception
+java.lang.NoSuchMethodError: org.springframework.boot.web.servlet.error.ErrorController.getErrorPath()Ljava/lang/String;
+	at org.springframework.cloud.netflix.zuul.web.ZuulHandlerMapping.lookupHandler(ZuulHandlerMapping.java:87)
+	at org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.getHandlerInternal(AbstractUrlHandlerMapping.java:151)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:498)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1261)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1043)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:403)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:249)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:344)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2022-05-02 18:05:05,026] logLevel=ERROR pid=4592 thread=http-nio-9001-exec-5 service=- trace= span= parent= class=o.a.c.c.C.[Tomcat].[localhost] Exception Processing ErrorPage[errorCode=0, location=/error]
+org.springframework.web.util.NestedServletException: Handler dispatch failed; nested exception is java.lang.NoSuchMethodError: org.springframework.boot.web.servlet.error.ErrorController.getErrorPath()Ljava/lang/String;
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1082)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:403)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:249)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:344)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NoSuchMethodError: org.springframework.boot.web.servlet.error.ErrorController.getErrorPath()Ljava/lang/String;
+	at org.springframework.cloud.netflix.zuul.web.ZuulHandlerMapping.lookupHandler(ZuulHandlerMapping.java:87)
+	at org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.getHandlerInternal(AbstractUrlHandlerMapping.java:151)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:498)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1261)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1043)
+	... 38 common frames omitted
+[2022-05-02 18:12:19,242] logLevel=INFO pid=4592 thread=RMI TCP Connection(41)-127.0.0.1 service=- trace= span= parent= class=o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin Application shutdown requested.
+[2022-05-02 18:12:19,548] logLevel=INFO pid=4592 thread=RMI TCP Connection(41)-127.0.0.1 service=- trace= span= parent= class=o.s.c.netflix.zuul.ZuulFilterInitializer Stopping filter initializer
+[2022-05-02 18:18:19,976] logLevel=INFO pid=1272 thread=main service=- trace= span= parent= class=c.b.a.u.apigateway.ApiGatewayApplication The following profiles are active: local-dev
+[2022-05-02 18:18:20,426] logLevel=INFO pid=1272 thread=main service=- trace= span= parent= class=o.s.d.r.c.RepositoryConfigurationDelegate Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[2022-05-02 18:18:20,436] logLevel=INFO pid=1272 thread=main service=- trace= span= parent= class=o.s.d.r.c.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 7ms. Found 0 MongoDB repository interfaces.
+[2022-05-02 18:18:20,482] logLevel=WARN pid=1272 thread=main service=- trace= span= parent= class=o.s.boot.actuate.endpoint.EndpointId Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+[2022-05-02 18:18:20,588] logLevel=INFO pid=1272 thread=main service=- trace= span= parent= class=o.s.cloud.context.scope.GenericScope BeanFactory id=4786b7b3-ff6b-36d9-97b5-3f575b8d14f2
+[2022-05-02 18:18:20,913] logLevel=INFO pid=1272 thread=main service=- trace= span= parent= class=o.s.b.w.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 9001 (http)
+[2022-05-02 18:18:20,920] logLevel=INFO pid=1272 thread=main service=- trace= span= parent= class=org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2022-05-02 18:18:20,920] logLevel=INFO pid=1272 thread=main service=- trace= span= parent= class=org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.41]
+[2022-05-02 18:18:21,015] logLevel=INFO pid=1272 thread=main service=- trace= span= parent= class=o.a.c.c.C.[Tomcat].[localhost].[/api] Initializing Spring embedded WebApplicationContext
+[2022-05-02 18:18:21,016] logLevel=INFO pid=1272 thread=main service=- trace= span= parent= class=o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1028 ms
+[2022-05-02 18:18:21,079] logLevel=WARN pid=1272 thread=main service=- trace= span= parent= class=c.n.c.sources.URLConfigurationSource No URLs will be polled as dynamic configuration sources.
+[2022-05-02 18:18:21,079] logLevel=INFO pid=1272 thread=main service=- trace= span= parent= class=c.n.c.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2022-05-02 18:18:21,090] logLevel=INFO pid=1272 thread=main service=- trace= span= parent= class=c.netflix.config.DynamicPropertyFactory DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2d206a71
+[2022-05-02 18:18:21,701] logLevel=WARN pid=1272 thread=main service=- trace= span= parent= class=c.n.c.sources.URLConfigurationSource No URLs will be polled as dynamic configuration sources.
+[2022-05-02 18:18:21,701] logLevel=INFO pid=1272 thread=main service=- trace= span= parent= class=c.n.c.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2022-05-02 18:18:21,828] logLevel=INFO pid=1272 thread=main service=- trace= span= parent= class=o.s.s.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+[2022-05-02 18:18:22,053] logLevel=INFO pid=1272 thread=main service=- trace= span= parent= class=org.mongodb.driver.cluster Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+[2022-05-02 18:18:22,053] logLevel=INFO pid=1272 thread=main service=- trace= span= parent= class=org.mongodb.driver.cluster Adding discovered server localhost:27017 to client view of cluster
+[2022-05-02 18:18:22,091] logLevel=INFO pid=1272 thread=cluster-ClusterId{value='626fd316e959bf608f4c89ab', description='null'}-localhost:27017 service=- trace= span= parent= class=org.mongodb.driver.connection Opened connection [connectionId{localValue:1, serverValue:30}] to localhost:27017
+[2022-05-02 18:18:22,095] logLevel=INFO pid=1272 thread=cluster-ClusterId{value='626fd316e959bf608f4c89ab', description='null'}-localhost:27017 service=- trace= span= parent= class=org.mongodb.driver.cluster Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 8]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1876100}
+[2022-05-02 18:18:22,096] logLevel=INFO pid=1272 thread=cluster-ClusterId{value='626fd316e959bf608f4c89ab', description='null'}-localhost:27017 service=- trace= span= parent= class=org.mongodb.driver.cluster Discovered cluster type of STANDALONE
+[2022-05-02 18:18:22,399] logLevel=INFO pid=1272 thread=main service=- trace= span= parent= class=o.s.c.netflix.zuul.ZuulFilterInitializer Starting filter initializer
+[2022-05-02 18:18:22,405] logLevel=INFO pid=1272 thread=main service=- trace= span= parent= class=o.s.b.a.e.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+[2022-05-02 18:18:22,466] logLevel=INFO pid=1272 thread=main service=- trace= span= parent= class=o.s.b.w.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 9001 (http) with context path '/api'
+[2022-05-02 18:18:22,958] logLevel=INFO pid=1272 thread=main service=- trace= span= parent= class=c.b.a.u.apigateway.ApiGatewayApplication Started ApiGatewayApplication in 4.484 seconds (JVM running for 5.41)
+[2022-05-02 18:18:23,002] logLevel=INFO pid=1272 thread=RMI TCP Connection(3)-127.0.0.1 service=- trace= span= parent= class=o.a.c.c.C.[Tomcat].[localhost].[/api] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-05-02 18:18:23,003] logLevel=INFO pid=1272 thread=RMI TCP Connection(3)-127.0.0.1 service=- trace= span= parent= class=o.s.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2022-05-02 18:18:23,009] logLevel=INFO pid=1272 thread=RMI TCP Connection(3)-127.0.0.1 service=- trace= span= parent= class=o.s.web.servlet.DispatcherServlet Completed initialization in 5 ms
+[2022-05-02 23:31:48,331] logLevel=INFO pid=1272 thread=RMI TCP Connection(325)-127.0.0.1 service=- trace= span= parent= class=o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin Application shutdown requested.
+[2022-05-02 23:31:48,334] logLevel=INFO pid=1272 thread=RMI TCP Connection(325)-127.0.0.1 service=- trace= span= parent= class=o.s.c.netflix.zuul.ZuulFilterInitializer Stopping filter initializer
+[2022-05-02 23:31:48,340] logLevel=INFO pid=1272 thread=RMI TCP Connection(325)-127.0.0.1 service=- trace= span= parent= class=o.s.s.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+[2022-05-02 23:31:48,689] logLevel=INFO pid=1272 thread=RMI TCP Connection(325)-127.0.0.1 service=- trace= span= parent= class=org.apache.catalina.core.StandardService Stopping service [Tomcat]
+[2022-05-02 23:31:48,692] logLevel=INFO pid=1272 thread=RMI TCP Connection(325)-127.0.0.1 service=- trace= span= parent= class=o.a.c.c.C.[Tomcat].[localhost].[/api] Destroying Spring FrameworkServlet 'dispatcherServlet'
+[2022-05-02 23:31:48,695] logLevel=WARN pid=1272 thread=RMI TCP Connection(325)-127.0.0.1 service=- trace= span= parent= class=o.a.c.loader.WebappClassLoaderBase The web application [api] appears to have started a thread named [RxIoScheduler-1 (Evictor)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.12/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.12/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.12/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.12/java.lang.Thread.run(Thread.java:834)
+[2022-05-02 23:31:48,696] logLevel=WARN pid=1272 thread=RMI TCP Connection(325)-127.0.0.1 service=- trace= span= parent= class=o.a.c.loader.WebappClassLoaderBase The web application [api] appears to have started a thread named [expiringMap-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.12/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.12/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.12/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.12/java.lang.Thread.run(Thread.java:834)
+[2022-05-02 23:31:56,528] logLevel=INFO pid=4528 thread=main service=- trace= span= parent= class=c.b.a.u.apigateway.ApiGatewayApplication The following profiles are active: local-dev
+[2022-05-02 23:31:56,987] logLevel=INFO pid=4528 thread=main service=- trace= span= parent= class=o.s.d.r.c.RepositoryConfigurationDelegate Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[2022-05-02 23:31:56,997] logLevel=INFO pid=4528 thread=main service=- trace= span= parent= class=o.s.d.r.c.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 6ms. Found 0 MongoDB repository interfaces.
+[2022-05-02 23:31:57,039] logLevel=WARN pid=4528 thread=main service=- trace= span= parent= class=o.s.boot.actuate.endpoint.EndpointId Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+[2022-05-02 23:31:57,136] logLevel=INFO pid=4528 thread=main service=- trace= span= parent= class=o.s.cloud.context.scope.GenericScope BeanFactory id=4786b7b3-ff6b-36d9-97b5-3f575b8d14f2
+[2022-05-02 23:31:57,479] logLevel=INFO pid=4528 thread=main service=- trace= span= parent= class=o.s.b.w.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 9001 (http)
+[2022-05-02 23:31:57,487] logLevel=INFO pid=4528 thread=main service=- trace= span= parent= class=org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2022-05-02 23:31:57,487] logLevel=INFO pid=4528 thread=main service=- trace= span= parent= class=org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.41]
+[2022-05-02 23:31:57,585] logLevel=INFO pid=4528 thread=main service=- trace= span= parent= class=o.a.c.c.C.[Tomcat].[localhost].[/api] Initializing Spring embedded WebApplicationContext
+[2022-05-02 23:31:57,585] logLevel=INFO pid=4528 thread=main service=- trace= span= parent= class=o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1044 ms
+[2022-05-02 23:31:57,647] logLevel=WARN pid=4528 thread=main service=- trace= span= parent= class=c.n.c.sources.URLConfigurationSource No URLs will be polled as dynamic configuration sources.
+[2022-05-02 23:31:57,647] logLevel=INFO pid=4528 thread=main service=- trace= span= parent= class=c.n.c.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2022-05-02 23:31:57,658] logLevel=INFO pid=4528 thread=main service=- trace= span= parent= class=c.netflix.config.DynamicPropertyFactory DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5e3db14
+[2022-05-02 23:31:58,322] logLevel=WARN pid=4528 thread=main service=- trace= span= parent= class=c.n.c.sources.URLConfigurationSource No URLs will be polled as dynamic configuration sources.
+[2022-05-02 23:31:58,322] logLevel=INFO pid=4528 thread=main service=- trace= span= parent= class=c.n.c.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2022-05-02 23:31:58,436] logLevel=INFO pid=4528 thread=main service=- trace= span= parent= class=o.s.s.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+[2022-05-02 23:31:58,682] logLevel=INFO pid=4528 thread=main service=- trace= span= parent= class=org.mongodb.driver.cluster Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+[2022-05-02 23:31:58,682] logLevel=INFO pid=4528 thread=main service=- trace= span= parent= class=org.mongodb.driver.cluster Adding discovered server localhost:27017 to client view of cluster
+[2022-05-02 23:31:58,721] logLevel=INFO pid=4528 thread=cluster-ClusterId{value='62701c964f8e08341f890611', description='null'}-localhost:27017 service=- trace= span= parent= class=org.mongodb.driver.connection Opened connection [connectionId{localValue:1, serverValue:74}] to localhost:27017
+[2022-05-02 23:31:58,726] logLevel=INFO pid=4528 thread=cluster-ClusterId{value='62701c964f8e08341f890611', description='null'}-localhost:27017 service=- trace= span= parent= class=org.mongodb.driver.cluster Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 8]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2025400}
+[2022-05-02 23:31:58,727] logLevel=INFO pid=4528 thread=cluster-ClusterId{value='62701c964f8e08341f890611', description='null'}-localhost:27017 service=- trace= span= parent= class=org.mongodb.driver.cluster Discovered cluster type of STANDALONE
+[2022-05-02 23:31:59,065] logLevel=INFO pid=4528 thread=main service=- trace= span= parent= class=o.s.c.netflix.zuul.ZuulFilterInitializer Starting filter initializer
+[2022-05-02 23:31:59,072] logLevel=INFO pid=4528 thread=main service=- trace= span= parent= class=o.s.b.a.e.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+[2022-05-02 23:31:59,138] logLevel=INFO pid=4528 thread=main service=- trace= span= parent= class=o.s.b.w.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 9001 (http) with context path '/api'
+[2022-05-02 23:31:59,639] logLevel=INFO pid=4528 thread=main service=- trace= span= parent= class=c.b.a.u.apigateway.ApiGatewayApplication Started ApiGatewayApplication in 4.643 seconds (JVM running for 5.619)
+[2022-05-02 23:32:01,082] logLevel=INFO pid=4528 thread=RMI TCP Connection(1)-127.0.0.1 service=- trace= span= parent= class=o.a.c.c.C.[Tomcat].[localhost].[/api] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-05-02 23:32:01,083] logLevel=INFO pid=4528 thread=RMI TCP Connection(1)-127.0.0.1 service=- trace= span= parent= class=o.s.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2022-05-02 23:32:01,089] logLevel=INFO pid=4528 thread=RMI TCP Connection(1)-127.0.0.1 service=- trace= span= parent= class=o.s.web.servlet.DispatcherServlet Completed initialization in 6 ms
+[2022-05-02 23:33:55,401] logLevel=INFO pid=4528 thread=RMI TCP Connection(10)-127.0.0.1 service=- trace= span= parent= class=o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin Application shutdown requested.
+[2022-05-02 23:33:55,404] logLevel=INFO pid=4528 thread=RMI TCP Connection(10)-127.0.0.1 service=- trace= span= parent= class=o.s.c.netflix.zuul.ZuulFilterInitializer Stopping filter initializer
+[2022-05-02 23:33:55,408] logLevel=INFO pid=4528 thread=RMI TCP Connection(10)-127.0.0.1 service=- trace= span= parent= class=o.s.s.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+[2022-05-02 23:33:55,745] logLevel=INFO pid=4528 thread=RMI TCP Connection(10)-127.0.0.1 service=- trace= span= parent= class=org.apache.catalina.core.StandardService Stopping service [Tomcat]
+[2022-05-02 23:33:55,748] logLevel=INFO pid=4528 thread=RMI TCP Connection(10)-127.0.0.1 service=- trace= span= parent= class=o.a.c.c.C.[Tomcat].[localhost].[/api] Destroying Spring FrameworkServlet 'dispatcherServlet'
+[2022-05-02 23:33:55,751] logLevel=WARN pid=4528 thread=RMI TCP Connection(10)-127.0.0.1 service=- trace= span= parent= class=o.a.c.loader.WebappClassLoaderBase The web application [api] appears to have started a thread named [RxIoScheduler-1 (Evictor)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.12/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.12/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.12/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.12/java.lang.Thread.run(Thread.java:834)
+[2022-05-02 23:34:03,571] logLevel=INFO pid=12500 thread=main service=- trace= span= parent= class=c.b.a.u.apigateway.ApiGatewayApplication The following profiles are active: local-dev
+[2022-05-02 23:34:04,073] logLevel=INFO pid=12500 thread=main service=- trace= span= parent= class=o.s.d.r.c.RepositoryConfigurationDelegate Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[2022-05-02 23:34:04,083] logLevel=INFO pid=12500 thread=main service=- trace= span= parent= class=o.s.d.r.c.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 6ms. Found 0 MongoDB repository interfaces.
+[2022-05-02 23:34:04,124] logLevel=WARN pid=12500 thread=main service=- trace= span= parent= class=o.s.boot.actuate.endpoint.EndpointId Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+[2022-05-02 23:34:04,236] logLevel=INFO pid=12500 thread=main service=- trace= span= parent= class=o.s.cloud.context.scope.GenericScope BeanFactory id=4786b7b3-ff6b-36d9-97b5-3f575b8d14f2
+[2022-05-02 23:34:04,568] logLevel=INFO pid=12500 thread=main service=- trace= span= parent= class=o.s.b.w.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 9001 (http)
+[2022-05-02 23:34:04,576] logLevel=INFO pid=12500 thread=main service=- trace= span= parent= class=org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2022-05-02 23:34:04,576] logLevel=INFO pid=12500 thread=main service=- trace= span= parent= class=org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.41]
+[2022-05-02 23:34:04,670] logLevel=INFO pid=12500 thread=main service=- trace= span= parent= class=o.a.c.c.C.[Tomcat].[localhost].[/api] Initializing Spring embedded WebApplicationContext
+[2022-05-02 23:34:04,670] logLevel=INFO pid=12500 thread=main service=- trace= span= parent= class=o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1086 ms
+[2022-05-02 23:34:04,731] logLevel=WARN pid=12500 thread=main service=- trace= span= parent= class=c.n.c.sources.URLConfigurationSource No URLs will be polled as dynamic configuration sources.
+[2022-05-02 23:34:04,731] logLevel=INFO pid=12500 thread=main service=- trace= span= parent= class=c.n.c.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2022-05-02 23:34:04,741] logLevel=INFO pid=12500 thread=main service=- trace= span= parent= class=c.netflix.config.DynamicPropertyFactory DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@78c74647
+[2022-05-02 23:34:05,358] logLevel=WARN pid=12500 thread=main service=- trace= span= parent= class=c.n.c.sources.URLConfigurationSource No URLs will be polled as dynamic configuration sources.
+[2022-05-02 23:34:05,359] logLevel=INFO pid=12500 thread=main service=- trace= span= parent= class=c.n.c.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2022-05-02 23:34:05,476] logLevel=INFO pid=12500 thread=main service=- trace= span= parent= class=o.s.s.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+[2022-05-02 23:34:05,726] logLevel=INFO pid=12500 thread=main service=- trace= span= parent= class=org.mongodb.driver.cluster Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+[2022-05-02 23:34:05,726] logLevel=INFO pid=12500 thread=main service=- trace= span= parent= class=org.mongodb.driver.cluster Adding discovered server localhost:27017 to client view of cluster
+[2022-05-02 23:34:05,767] logLevel=INFO pid=12500 thread=cluster-ClusterId{value='62701d15ffcf9e7979a9e825', description='null'}-localhost:27017 service=- trace= span= parent= class=org.mongodb.driver.connection Opened connection [connectionId{localValue:1, serverValue:75}] to localhost:27017
+[2022-05-02 23:34:05,772] logLevel=INFO pid=12500 thread=cluster-ClusterId{value='62701d15ffcf9e7979a9e825', description='null'}-localhost:27017 service=- trace= span= parent= class=org.mongodb.driver.cluster Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 8]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1845400}
+[2022-05-02 23:34:05,773] logLevel=INFO pid=12500 thread=cluster-ClusterId{value='62701d15ffcf9e7979a9e825', description='null'}-localhost:27017 service=- trace= span= parent= class=org.mongodb.driver.cluster Discovered cluster type of STANDALONE
+[2022-05-02 23:34:06,112] logLevel=INFO pid=12500 thread=main service=- trace= span= parent= class=o.s.c.netflix.zuul.ZuulFilterInitializer Starting filter initializer
+[2022-05-02 23:34:06,118] logLevel=INFO pid=12500 thread=main service=- trace= span= parent= class=o.s.b.a.e.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+[2022-05-02 23:34:06,182] logLevel=INFO pid=12500 thread=main service=- trace= span= parent= class=o.s.b.w.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 9001 (http) with context path '/api'
+[2022-05-02 23:34:06,652] logLevel=INFO pid=12500 thread=main service=- trace= span= parent= class=c.b.a.u.apigateway.ApiGatewayApplication Started ApiGatewayApplication in 4.623 seconds (JVM running for 5.554)
+[2022-05-02 23:34:08,765] logLevel=INFO pid=12500 thread=RMI TCP Connection(9)-127.0.0.1 service=- trace= span= parent= class=o.a.c.c.C.[Tomcat].[localhost].[/api] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-05-02 23:34:08,765] logLevel=INFO pid=12500 thread=RMI TCP Connection(9)-127.0.0.1 service=- trace= span= parent= class=o.s.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2022-05-02 23:34:08,772] logLevel=INFO pid=12500 thread=RMI TCP Connection(9)-127.0.0.1 service=- trace= span= parent= class=o.s.web.servlet.DispatcherServlet Completed initialization in 6 ms
