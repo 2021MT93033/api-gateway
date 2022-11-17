@@ -54,7 +54,15 @@ zuul:
    vendors:
      path: /vendor-service/**
      url: http://localhost:9004/vendor-service/
-     sensitive-headers: Cookie, Set-Cookie      
+     sensitive-headers: Cookie, Set-Cookie 
+   doctor:
+     path: /doctor-alert-service/**
+     url: http://localhost:9006/doctor-alert-service/
+     sensitive-headers: Cookie, Set-Cookie  
+   patient:
+     path: /patient-monitoring-service/**
+     url: http://localhost:9008/patient-monitoring-service/
+     sensitive-headers: Cookie, Set-Cookie       
 
 logging:
   file:
