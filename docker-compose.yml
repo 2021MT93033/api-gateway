@@ -1,0 +1,54 @@
+version : "3"
+services :
+ balaMongoDB:
+  image: mongo:latest
+  container_name: "balaMongoDB"
+  networks:
+    - patientMonitor
+  ports:
+    - 27017:27017
+ api-gateway-service:
+  image: api-gateway-service:1.0
+  container_name: "api-gateway-service"
+  networks:
+    - patientMonitor  
+  ports:
+    - 9001:9001
+ connector-service:
+  image: connector-service:1.0
+  container_name: "connector-service"
+  networks:
+    - patientMonitor
+  ports:
+    - 9005:9005
+ user-service:
+  image: user-service:1.0
+  container_name: "user-service"
+  networks:
+    - patientMonitor
+  ports:
+    - 9002:9002
+ edge-patient-monitoring-service:
+  image: edge-patient-monitoring-service:1.0
+  container_name: "edge-patient-monitoring-service"
+  networks:
+    - patientMonitor
+  ports:
+    - 9007:9007
+ patient-monitoring-service:
+  image: patient-monitoring-service:1.0
+  container_name: "patient-monitoring-service"
+  networks:
+    - patientMonitor
+  ports:
+    - 9008:9008
+ doctor-alert-service:
+  image: doctor-alert-service:1.0
+  container_name: "doctor-alert-service"
+  networks:
+    - patientMonitor
+  ports:
+    - 9006:9006
+networks:
+  patientMonitor:
+    name: patientMonitor
